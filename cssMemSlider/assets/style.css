@@ -1,0 +1,168 @@
+body {
+    background-color: #292c2e;
+    background: linear-gradient(90deg, rgb(74, 87, 93) 0%, rgb(33, 36, 37) 100%);
+    font-size: .7rem;
+}
+.container {
+    width: 90%;
+    height: 60vh;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#y1 {
+    margin-left: auto;
+}
+
+.box1 {
+    height: 40vw;
+    width: 400%;
+    display: flex;
+    overflow: hidden;
+    border-radius: 1vh;
+}
+
+img {
+    width: 90vw;
+    height: 100%;
+}
+.box2 {
+    width: 65%;
+    display: flex;
+    flex-wrap: wrap;
+    height: 14%;
+    overflow: hidden;
+}
+
+.text {
+    height: 100%;
+    width: 60%;
+    color: white;
+}
+#r1:checked  ~ .box1 .s1{
+    margin-left: -0%;
+}
+#r2:checked  ~ .box1 .s1{
+    margin-left: -90vw;
+}
+#r3:checked  ~ .box1 .s1{
+    margin-left: -180vw;
+}
+#r4:checked  ~ .box1 .s1{
+    margin-left: -270vw;
+}
+
+#r1:checked ~ .box2 .t1 {
+    margin-left: 1%;
+}
+#r2:checked ~ .box2 .t1 {
+    margin-left: -60%;
+}
+#r3:checked ~ .box2 .t1 {
+    margin-left: -120%;
+}
+#r4:checked ~ .box2 .t1 {
+    margin-left: -180%;
+}
+
+.slide, .text {
+    transition: all .6s ease; 
+    font-size: 2.1rem;
+}
+
+#y1 {
+    order: 2;
+}
+#y2 {
+    order: 3;
+}
+#y3 {
+    order: 4;
+}
+#y4 {
+    order: 5;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+label {
+    height: 6vh;
+    width: 4vh;
+    height: 8vh;
+    width: 6vh;
+    cursor: pointer;
+}
+
+.checkmark {
+    height: 45%;
+    width: 65%;
+    background-color: #5cabfa;
+    border-radius: 50%;
+    margin: 30% auto;
+
+}
+
+#r1:checked ~ #y1 .checkmark,
+#r2:checked ~ #y2 .checkmark,
+#r3:checked ~ #y3 .checkmark,
+#r4:checked ~ #y4 .checkmark {
+    border: .1em solid #5cabfa;
+    background-color: hsla(120, 100%, 50%, 0.0);    height: 40%;
+    width: 60%;
+}
+
+#r1:hover ~ #y1 .checkmark,
+#r2:hover ~ #y2 .checkmark,
+#r3:hover ~ #y3 .checkmark,
+#r4:hover ~ #y4 .checkmark {
+    border: .1em solid white;
+}
+
+#r1:active ~ #y1 .checkmark,
+#r2:active ~ #y2 .checkmark,
+#r3:active ~ #y3 .checkmark,
+#r4:active ~ #y4 .checkmark {
+    border: .1em solid #D0D0D0;
+    background-color: #D0D0D0;
+}
+
+label:hover > .checkmark {
+    background-color: white;
+    border: .1em solid white;
+    height: 40%;
+    width: 60%;
+}
+
+@media(max-width: 767px) {
+    .container {
+        height: 60%;
+    }
+
+    .box2{
+        order: 6;
+        width: 100%;
+        height: 10vh;
+    }
+    #y1 {
+        margin-left:auto;
+    }
+    #y4 {
+        margin-right:auto;
+    }
+    label {
+        height: 10vh;
+        width: 8vh;
+    }
+    .t1 {
+        overflow: hidden;
+    }
+
+    .text {
+        height: 10vh;
+        overflow: hidden;
+        font-size: 1.5rem;
+    }
+}
