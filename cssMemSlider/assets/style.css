@@ -89,10 +89,8 @@ input[type="radio"] {
 }
 
 label {
-    height: 6vh;
-    width: 4vh;
-    height: 8vh;
-    width: 6vh;
+    height: 7vh;
+    width: 5vh;
     cursor: pointer;
 }
 
