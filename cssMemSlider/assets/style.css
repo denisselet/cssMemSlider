@@ -6,7 +6,7 @@ body {
 .container {
     width: 90%;
     height: 60vh;
-    margin: 0 auto;
+    margin: 2vw auto 0;
     display: flex;
     flex-wrap: wrap;
     align-content: flex-start;
