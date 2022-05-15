@@ -109,7 +109,8 @@ label {
 #r3:checked ~ #y3 .checkmark,
 #r4:checked ~ #y4 .checkmark {
     border: .1em solid #5cabfa;
-    background-color: hsla(120, 100%, 50%, 0.0);    height: 40%;
+    background-color: hsla(120, 100%, 50%, 0.0);    
+    height: 40%;
     width: 60%;
 }
 
@@ -154,9 +155,6 @@ label:hover > .checkmark {
     label {
         height: 10vh;
         width: 8vh;
-    }
-    .t1 {
-        overflow: hidden;
     }
 
     .text {
